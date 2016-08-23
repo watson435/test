@@ -121,7 +121,7 @@ http://developer.android.com/tools/devices/managing-avds.html#createavd
    default because it is unsigned. You will be told the APK cannot be
    parsed.
 
-# Running server on device
+# Browsing server on device
 -------------------------
 For a Vagrant server
 If you are using a Genymotion Emulator you can access the server by browsing to http://10.0.3.2:9991 or http://10.0.3.1:9991 (one of these two URL's)
