@@ -38,7 +38,7 @@ Index
 .. _Export: #export
 .. _License: #license
 
-# Getting Started
+#Getting Started
 -----------------------------------
 
  - Firstly setup a development environment of the Zulip python Server 
@@ -46,7 +46,7 @@ Index
  - Now follow the build instructions to compile the project
  - And then follow [Running server on device](#browsing-server-on-device) to get the server running on the device.
 
-# Build instructions (Android Studio)
+#Build instructions (Android Studio)
 -----------------------------------
 
 1. Open the project in the IDE.
@@ -75,7 +75,7 @@ emulator. Here are instructions for creating an Android virtual device
 
 http://developer.android.com/tools/devices/managing-avds.html#createavd
 
-# Build instructions (without Android Studio)
+#Build instructions (without Android Studio)
 -------------------------------------------
 
 1. Install the Android SDK including at least the API 23 (Android 6.0),
@@ -132,7 +132,7 @@ http://developer.android.com/tools/devices/managing-avds.html#createavd
    default because it is unsigned. You will be told the APK cannot be
    parsed.
 
-# Browsing server on device
+#Browsing server on device
 -------------------------
 For a Vagrant server
 If you are using a Genymotion Emulator you can access the server by browsing to http://10.0.3.2:9991 or http://10.0.3.1:9991 (one of these two URL's)
@@ -154,21 +154,21 @@ If unclear you can follow tutorial here [Host Remapping](http://docs.telerik.com
  - Now configure your android device following [this](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) detailed tutorial 
 
 
-# Coding Style
+#Coding Style
 ------------
 
 Please read the Zulip coding style conventions documented at
 https://zulip.readthedocs.org/en/latest/code-style.html#version-control
 carefully.
 
-Mailing List
+#Mailing List
 ------------
 
 There's a mailing list for questions and development discussions
 related to the Zulip Android app:
 https://groups.google.com/forum/#!forum/zulip-android.
 
-Export
+#Export
 ------
 This distribution includes cryptographic software. The country in
 which you currently reside may have restrictions on the import,
@@ -188,7 +188,7 @@ Software Unrestricted (TSU) exception (see the BIS Export
 Administration Regulations, Section 740.13) for both object code and
 source code.
 
-License
+#License
 -------
 
 Copyright 2012-2016 Dropbox, Inc.
