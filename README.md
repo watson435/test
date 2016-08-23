@@ -18,7 +18,7 @@ or by using Android Studio.
 
 Index
 
-* [Getting Started](#Getting-Started)
+* [Getting Started](#getting-Started)
 * [Build instructions (Android Studio)](#Build-instructions-(Android-Studio))
 * [Build instructions (without Android Studio)](#Build-instructions-(without-Android-Studio))
 * [Running server on device](#Running-server-on-device)
