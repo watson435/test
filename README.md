@@ -18,14 +18,14 @@ or by using Android Studio.
 
 Index
 
-* [Getting Started](#getting-Started)
-* [Build instructions (Android Studio)](#Build-instructions-(Android-Studio))
-* [Build instructions (without Android Studio)](#Build-instructions-(without-Android-Studio))
-* [Running server on device](#Running-server-on-device)
-* [Coding Style](#Coding-Style)
-* [Mailing List](#Mailing-List)
-* [Export](#Export)
-* [License](#License)
+* [Getting Started](#getting-started)
+* [Build instructions (Android Studio)](#build-instructions-android-studio))
+* [Build instructions (without Android Studio)](#build-instructions-without-android-studio))
+* [Running server on device](#browsing-server-on-device)
+* [Coding Style](#coding-style)
+* [Mailing List](#mailing-list)
+* [Export](#export)
+* [License](#license)
 
 # Getting Started
 -----------------------------------
@@ -33,7 +33,7 @@ Index
  - Firstly setup a development environment of the Zulip python Server 
    https://github.com/zulip/zulip/blob/master/README.dev.md#brief-installation-instructions-for-vagrant-development-environment
  - Now follow the build instructions to compile the project
- - When compiled you can use the AVD android emulator or Genymotion emulator to run this project.
+ - And then follow [Running server on device](#browsing-server-on-device) to get the server running on the device.
 
 # Build instructions (Android Studio)
 -----------------------------------
@@ -126,8 +126,8 @@ http://developer.android.com/tools/devices/managing-avds.html#createavd
 For a Vagrant server
 If you are using a Genymotion Emulator you can access the server by browsing to http://10.0.3.2:9991 or http://10.0.3.1:9991 (one of these two URL's)
 
-To access the vagrant server on a physical device connect computer and mobile to the same network (router) modify `VagrantFile` (here)[https://github.com/zulip/zulip/blob/1c40df9363b70af0e275c44a03f9627808852616/Vagrantfile#L37] in the server change the host_ip '127.0.0.1' to '0.0.0.0' Like this-
- > config.vm.network "forwarded_port", guest: 9991, host: host_port, host_ip: "127.0.0.1"
+To access the vagrant server on a physical device connect computer and mobile to the same network (router) modify `VagrantFile` [here](https://github.com/zulip/zulip/blob/1c40df9363b70af0e275c44a03f9627808852616/Vagrantfile#L37) in the server change the host_ip '127.0.0.1' to '0.0.0.0' Like this-
+ > config.vm.network "forwarded_port", guest: 9991, host: host_port, host_ip: "0.0.0.0"
  
 Now find the IP address of the computer use this IP address and port number and browse the Zulip Server on the mobile device.
 
@@ -136,8 +136,8 @@ You can also route the IP address to a domain name like www.local.test.com (this
  - Remap the hosts by fiddler by adding this line in TOOLS> HOSTS
  > localhost:9991 www.local.test.com
 
-If unclear you can follow tutorial here (Host Remapping)[http://docs.telerik.com/fiddler/KnowledgeBase/HOSTS] 
- - Now follow (this)[http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid]
+If unclear you can follow tutorial here [Host Remapping](http://docs.telerik.com/fiddler/KnowledgeBase/HOSTS) 
+ - Now follow [this](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid)
 
 
 # Coding Style
