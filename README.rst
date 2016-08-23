@@ -18,14 +18,25 @@ or by using Android Studio.
 
 Index
 
-* [Getting Started](#getting-started)
-* [Build instructions (Android Studio)](#build-instructions-android-studio))
-* [Build instructions (without Android Studio)](#build-instructions-without-android-studio))
-* [Running server on device](#browsing-server-on-device)
-* [Coding Style](#coding-style)
-* [Mailing List](#mailing-list)
-* [Export](#export)
-* [License](#license)
+Index
+
+-  `Getting Started`_
+-  `Build instructions (Android Studio)`_)
+-  `Build instructions (without Android Studio)`_)
+-  `Running server on device`_
+-  `Coding Style`_
+-  `Mailing List`_
+-  `Export`_
+-  `License`_
+
+.. _Getting Started: #getting-started
+.. _Build instructions (Android Studio): #build-instructions-android-studio
+.. _Build instructions (without Android Studio): #build-instructions-without-android-studio
+.. _Running server on device: #browsing-server-on-device
+.. _Coding Style: #coding-style
+.. _Mailing List: #mailing-list
+.. _Export: #export
+.. _License: #license
 
 # Getting Started
 -----------------------------------
