@@ -38,7 +38,7 @@ Index
 .. _Export: #export
 .. _License: #license
 
-#Getting Started
+Getting Started
 -----------------------------------
 
  - Firstly setup a development environment of the Zulip python Server 
@@ -46,7 +46,7 @@ Index
  - Now follow the build instructions to compile the project
  - And then follow [Running server on device](#browsing-server-on-device) to get the server running on the device.
 
-#Build instructions (Android Studio)
+Build instructions (Android Studio)
 -----------------------------------
 
 1. Open the project in the IDE.
