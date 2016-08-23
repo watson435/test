@@ -132,8 +132,9 @@ To access the vagrant server on a physical device connect computer and mobile to
 Now find the IP address of the computer use this IP address and port number and browse the Zulip Server on the mobile device. For example -
  > 192.168.0.1:9991
 
-
+<br /><br />
 You can also route the IP address to a domain name like www.local.test.com (this routing is useful when tesing Google OAuth Backend) 
+No need to modify the `VagrantFile` to achieve this
  - Remap the hosts by fiddler by adding this line in TOOLS> HOSTS
  
 > localhost:9991 www.local.test.com
