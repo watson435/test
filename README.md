@@ -129,15 +129,17 @@ If you are using a Genymotion Emulator you can access the server by browsing to 
 To access the vagrant server on a physical device connect computer and mobile to the same network (router) modify `VagrantFile` [here](https://github.com/zulip/zulip/blob/1c40df9363b70af0e275c44a03f9627808852616/Vagrantfile#L37) in the server change the host_ip '127.0.0.1' to '0.0.0.0' Like this-
  > config.vm.network "forwarded_port", guest: 9991, host: host_port, host_ip: "0.0.0.0"
  
-Now find the IP address of the computer use this IP address and port number and browse the Zulip Server on the mobile device.
+Now find the IP address of the computer use this IP address and port number and browse the Zulip Server on the mobile device. For example -
+ > 192.168.0.1:9991
 
 
 You can also route the IP address to a domain name like www.local.test.com (this routing is useful when tesing Google OAuth Backend) 
  - Remap the hosts by fiddler by adding this line in TOOLS> HOSTS
- > localhost:9991 www.local.test.com
+ 
+> localhost:9991 www.local.test.com
 
 If unclear you can follow tutorial here [Host Remapping](http://docs.telerik.com/fiddler/KnowledgeBase/HOSTS) 
- - Now follow [this](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid)
+ - Now configure your android device following [this](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) detailed tutorial 
 
 
 # Coding Style
