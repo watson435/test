@@ -39,12 +39,15 @@ Index
 .. _License: #license
 
 Getting Started
------------------------------------
+---------------
 
- - Firstly setup a development environment of the Zulip python Server 
+-  Firstly setup a development environment of the Zulip python Server
    https://github.com/zulip/zulip/blob/master/README.dev.md#brief-installation-instructions-for-vagrant-development-environment
- - Now follow the build instructions to compile the project
- - And then follow [Running server on device](#browsing-server-on-device) to get the server running on the device.
+-  Now follow the build instructions to compile the project
+-  And then follow `Running server on device`_ to get the server running
+   on the device.
+
+.. _Running server on device: #browsing-server-on-device
 
 Build instructions (Android Studio)
 -----------------------------------
@@ -75,7 +78,7 @@ emulator. Here are instructions for creating an Android virtual device
 
 http://developer.android.com/tools/devices/managing-avds.html#createavd
 
-#Build instructions (without Android Studio)
+Build instructions (without Android Studio)
 -------------------------------------------
 
 1. Install the Android SDK including at least the API 23 (Android 6.0),
@@ -132,43 +135,60 @@ http://developer.android.com/tools/devices/managing-avds.html#createavd
    default because it is unsigned. You will be told the APK cannot be
    parsed.
 
-#Browsing server on device
+Browsing server on device
 -------------------------
-For a Vagrant server
-If you are using a Genymotion Emulator you can access the server by browsing to http://10.0.3.2:9991 or http://10.0.3.1:9991 (one of these two URL's)
 
-To access the vagrant server on a physical device connect computer and mobile to the same network (router) modify `VagrantFile` [here](https://github.com/zulip/zulip/blob/1c40df9363b70af0e275c44a03f9627808852616/Vagrantfile#L37) in the server change the host_ip '127.0.0.1' to '0.0.0.0' Like this-
- > config.vm.network "forwarded_port", guest: 9991, host: host_port, host_ip: "0.0.0.0"
- 
-Now find the IP address of the computer use this IP address and port number and browse the Zulip Server on the mobile device. For example -
- > 192.168.0.1:9991
+| For a Vagrant server
+| If you are using a Genymotion Emulator you can access the server by
+  browsing to http://10.0.3.2:9991 or http://10.0.3.1:9991 (one of these
+  two URL’s)
 
-<br /><br />
-You can also route the IP address to a domain name like www.local.test.com (this routing is useful when tesing Google OAuth Backend) 
-No need to modify the `VagrantFile` to achieve this
- - Remap the hosts by fiddler by adding this line in TOOLS> HOSTS
- 
-> localhost:9991 www.local.test.com
+To access the vagrant server on a physical device connect computer and
+mobile to the same network (router) modify ``VagrantFile`` `here`_ in
+the server change the host\_ip ‘127.0.0.1’ to ‘0.0.0.0’ Like this-
 
-If unclear you can follow tutorial here [Host Remapping](http://docs.telerik.com/fiddler/KnowledgeBase/HOSTS) 
- - Now configure your android device following [this](http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid) detailed tutorial 
+    config.vm.network “forwarded\_port”, guest: 9991, host: host\_port,
+    host\_ip: “0.0.0.0”
+
+Now find the IP address of the computer use this IP address and port
+number and browse the Zulip Server on the mobile device. For example -
+
+    192.168.0.1:9991
+
+| 
+| You can also route the IP address to a domain name like
+  www.local.test.com (this routing is useful when tesing Google OAuth
+  Backend)
+| No need to modify the ``VagrantFile`` to achieve this
+
+-  Remap the hosts by fiddler by adding this line in TOOLS> HOSTS
+
+    localhost:9991 www.local.test.com
+
+If unclear you can follow tutorial here `Host Remapping`_
+
+-  Now configure your android device following `this`_ detailed tutorial
+
+.. _here: https://github.com/zulip/zulip/blob/1c40df9363b70af0e275c44a03f9627808852616/Vagrantfile#L37
+.. _Host Remapping: http://docs.telerik.com/fiddler/KnowledgeBase/HOSTS
+.. _this: http://docs.telerik.com/fiddler/Configure-Fiddler/Tasks/ConfigureForAndroid
 
 
-#Coding Style
+Coding Style
 ------------
 
 Please read the Zulip coding style conventions documented at
 https://zulip.readthedocs.org/en/latest/code-style.html#version-control
 carefully.
 
-#Mailing List
+Mailing List
 ------------
 
 There's a mailing list for questions and development discussions
 related to the Zulip Android app:
 https://groups.google.com/forum/#!forum/zulip-android.
 
-#Export
+Export
 ------
 This distribution includes cryptographic software. The country in
 which you currently reside may have restrictions on the import,
@@ -188,7 +208,7 @@ Software Unrestricted (TSU) exception (see the BIS Export
 Administration Regulations, Section 740.13) for both object code and
 source code.
 
-#License
+License
 -------
 
 Copyright 2012-2016 Dropbox, Inc.
