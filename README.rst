@@ -18,9 +18,8 @@ or by using Android Studio.
 
 Index
 
-Index
-
 -  `Getting Started`_
+-  `Issues`_
 -  `Build instructions (Android Studio)`_)
 -  `Build instructions (without Android Studio)`_)
 -  `Running server on device`_
@@ -30,6 +29,7 @@ Index
 -  `License`_
 
 .. _Getting Started: #getting-started
+.. _Issues: #issues
 .. _Build instructions (Android Studio): #build-instructions-android-studio
 .. _Build instructions (without Android Studio): #build-instructions-without-android-studio
 .. _Running server on device: #browsing-server-on-device
@@ -41,13 +41,21 @@ Index
 Getting Started
 ---------------
 
--  Firstly setup a development environment of the Zulip python Server
-   https://github.com/zulip/zulip/blob/master/README.dev.md#brief-installation-instructions-for-vagrant-development-environment
--  Now follow the build instructions to compile the project
--  And then follow `Running server on device`_ to get the server running
-   on the device.
+-  First, setup a development environment of the Zulip Server:
+   http://zulip.readthedocs.io/en/latest/dev-overview.html
+-  Then, follow the build instructions (below) to compile the project
+-  And then follow `Running server on device`_ to get the device to
+   connect to the Zulip development server.
 
 .. _Running server on device: #browsing-server-on-device
+
+Issues
+---------------
+For questions on development for the App you can post a topic here 
+https://groups.google.com/forum/#!forum/zulip-android
+
+For questions on development for the Server you can post a topic here 
+https://groups.google.com/forum/#!forum/zulip-devel
 
 Build instructions (Android Studio)
 -----------------------------------
@@ -155,7 +163,7 @@ number and browse the Zulip Server on the mobile device. For example -
 
     192.168.0.1:9991
 
-| 
+|
 | You can also route the IP address to a domain name like
   www.local.test.com (this routing is useful when tesing Google OAuth
   Backend)
