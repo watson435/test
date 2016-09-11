@@ -16,10 +16,12 @@ or data loss bugs.)
 This is a Gradle project, and can be built via the provided ``gradlew``
 or by using Android Studio.
 
-Index
+**Index**
+---------------
+
 
 -  `Getting Started`_
--  `Issues`_
+-  `Getting Help`_
 -  `Build instructions (Android Studio)`_)
 -  `Build instructions (without Android Studio)`_)
 -  `Running server on device`_
@@ -29,7 +31,7 @@ Index
 -  `License`_
 
 .. _Getting Started: #getting-started
-.. _Issues: #issues
+.. _Getting Help: #getting-help
 .. _Build instructions (Android Studio): #build-instructions-android-studio
 .. _Build instructions (without Android Studio): #build-instructions-without-android-studio
 .. _Running server on device: #browsing-server-on-device
@@ -49,13 +51,16 @@ Getting Started
 
 .. _Running server on device: #browsing-server-on-device
 
-Issues
+Getting Help
 ---------------
-For questions on development for the App you can post a topic here 
+For questions on development for the Zulip Android App you can post a topic here 
 https://groups.google.com/forum/#!forum/zulip-android
 
-For questions on development for the Server you can post a topic here 
+For questions on development for the Zulip Server you can post a topic here 
 https://groups.google.com/forum/#!forum/zulip-devel
+
+Any issues or bugs should be posted in the Github Issue Tracker!
+
 
 Build instructions (Android Studio)
 -----------------------------------
@@ -232,4 +237,5 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
 
